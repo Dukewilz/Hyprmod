@@ -1,0 +1,124 @@
+/* MatugenReadable GTK4 */
+
+@define-color theme_bg_color #121318;
+@define-color theme_fg_color #e3e2e9;
+
+@define-color theme_surface #1e1f25;
+@define-color theme_surface_high #292a2f;
+@define-color theme_surface_highest #34343a;
+
+@define-color theme_border #8f909a;
+@define-color theme_border_subtle #44464f;
+
+@define-color theme_accent #b4c5ff;
+@define-color theme_accent_dark #324478;
+
+
+/* Main background */
+
+window,
+.background {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: @theme_surface_high;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+    border-radius: 7px;
+
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: @theme_surface_highest;
+    border-color: @theme_border;
+}
+
+button:active,
+button:checked {
+    background-color: @theme_accent_dark;
+    color: #ffffff;
+    border-color: @theme_accent;
+}
+
+
+/* Entries */
+
+entry,
+spinbutton,
+searchentry {
+    background-color: @theme_surface;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+    border-radius: 7px;
+}
+
+entry:focus,
+spinbutton:focus,
+searchentry:focus {
+    border-color: @theme_accent;
+}
+
+
+/* Menus / popovers */
+
+popover,
+popover.background {
+    background-color: @theme_surface;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+}
+
+
+/* Lists */
+
+row {
+    color: @theme_fg_color;
+}
+
+row:hover {
+    background-color: @theme_surface_high;
+}
+
+row:selected {
+    background-color: @theme_accent_dark;
+    color: #ffffff;
+}
+
+
+/* Checkboxes */
+
+check {
+    background-color: @theme_surface_high;
+    border: 1px solid @theme_border;
+}
+
+check:checked {
+    background-color: @theme_accent;
+    color: #181b27;
+}
+
+
+/* Switches */
+
+switch {
+    background-color: @theme_surface_high;
+    border: 1px solid @theme_border;
+}
+
+switch:checked {
+    background-color: @theme_accent_dark;
+    border-color: @theme_accent;
+}
+
+switch slider {
+    background-color: #e3e2e9;
+}

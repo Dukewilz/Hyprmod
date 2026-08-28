@@ -1,0 +1,283 @@
+/* =========================================================
+   MatugenReadable GTK Theme
+   Readable dark UI - designed for Matugen tonal-spot
+   ========================================================= */
+
+@define-color theme_bg_color #121318;
+@define-color theme_fg_color #e3e2e9;
+
+@define-color theme_base_color #121318;
+@define-color theme_text_color #e3e2e9;
+
+@define-color theme_surface #1e1f25;
+@define-color theme_surface_high #292a2f;
+@define-color theme_surface_highest #34343a;
+
+@define-color theme_border #8f909a;
+@define-color theme_border_subtle #44464f;
+
+@define-color theme_accent #b4c5ff;
+@define-color theme_accent_dark #324478;
+
+@define-color theme_selected_bg #324478;
+@define-color theme_selected_fg #ffffff;
+
+
+/* ---------------------------------------------------------
+   Main application
+   --------------------------------------------------------- */
+
+window,
+.background {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+
+/* ---------------------------------------------------------
+   Headerbars / toolbars
+   --------------------------------------------------------- */
+
+headerbar,
+.titlebar,
+toolbar {
+    background-color: @theme_surface;
+    color: @theme_fg_color;
+
+    border-bottom: 1px solid @theme_border_subtle;
+    box-shadow: none;
+}
+
+
+/* ---------------------------------------------------------
+   Buttons
+   --------------------------------------------------------- */
+
+button {
+    background-color: @theme_surface_high;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+    border-radius: 7px;
+
+    min-height: 30px;
+    padding: 4px 10px;
+
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: @theme_surface_highest;
+    border-color: @theme_border;
+}
+
+button:active,
+button:checked {
+    background-color: @theme_selected_bg;
+    color: @theme_selected_fg;
+    border-color: @theme_accent;
+}
+
+button:disabled {
+    background-color: #18191f;
+    color: #686a73;
+    border-color: #292a30;
+}
+
+
+/* ---------------------------------------------------------
+   Suggested / accent buttons
+   --------------------------------------------------------- */
+
+button.suggested-action {
+    background-color: @theme_accent;
+    color: #181b27;
+    border-color: @theme_accent;
+}
+
+button.suggested-action:hover {
+    background-color: #c5d2ff;
+}
+
+button.destructive-action {
+    background-color: #93000a;
+    color: #ffdad6;
+    border-color: #ff5449;
+}
+
+
+/* ---------------------------------------------------------
+   Entries / search boxes / text fields
+   --------------------------------------------------------- */
+
+entry,
+spinbutton,
+combobox,
+searchbar,
+searchentry {
+    background-color: @theme_surface;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+    border-radius: 7px;
+}
+
+entry:focus,
+spinbutton:focus,
+combobox:focus,
+searchbar:focus,
+searchentry:focus {
+    border-color: @theme_accent;
+    box-shadow: 0 0 0 1px @theme_accent;
+}
+
+
+/* ---------------------------------------------------------
+   Menus
+   --------------------------------------------------------- */
+
+menu,
+.menu,
+popover,
+popover.background {
+    background-color: @theme_surface;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border_subtle;
+}
+
+menuitem,
+modelbutton {
+    color: @theme_fg_color;
+    border-radius: 6px;
+}
+
+menuitem:hover,
+modelbutton:hover {
+    background-color: @theme_surface_highest;
+}
+
+
+/* ---------------------------------------------------------
+   Sidebar / lists
+   --------------------------------------------------------- */
+
+.sidebar,
+.sidebar-view,
+placessidebar,
+treeview,
+list,
+row {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+.sidebar row:hover,
+placessidebar row:hover,
+list row:hover {
+    background-color: @theme_surface_high;
+}
+
+.sidebar row:selected,
+placessidebar row:selected,
+list row:selected {
+    background-color: @theme_selected_bg;
+    color: @theme_selected_fg;
+}
+
+
+/* ---------------------------------------------------------
+   Frames / cards
+   --------------------------------------------------------- */
+
+frame,
+.frame,
+card {
+    border-color: @theme_border_subtle;
+}
+
+
+/* ---------------------------------------------------------
+   Checkboxes / radio buttons
+   --------------------------------------------------------- */
+
+checkbutton,
+radiobutton {
+    color: @theme_fg_color;
+}
+
+checkbutton check,
+radiobutton radio {
+    background-color: @theme_surface_high;
+    border: 1px solid @theme_border;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background-color: @theme_accent;
+    border-color: @theme_accent;
+}
+
+
+/* ---------------------------------------------------------
+   Switch
+   --------------------------------------------------------- */
+
+switch {
+    background-color: @theme_surface_high;
+    border: 1px solid @theme_border;
+}
+
+switch:checked {
+    background-color: @theme_accent_dark;
+    border-color: @theme_accent;
+}
+
+switch slider {
+    background-color: #e3e2e9;
+}
+
+
+/* ---------------------------------------------------------
+   Scrollbars
+   --------------------------------------------------------- */
+
+scrollbar trough {
+    background-color: @theme_bg_color;
+}
+
+scrollbar slider {
+    background-color: #5e6070;
+    border-radius: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: @theme_border;
+}
+
+
+/* ---------------------------------------------------------
+   Tooltips
+   --------------------------------------------------------- */
+
+tooltip {
+    background-color: #292a2f;
+    color: @theme_fg_color;
+
+    border: 1px solid @theme_border;
+}
+
+
+/* ---------------------------------------------------------
+   Links / accent
+   --------------------------------------------------------- */
+
+link,
+*:link {
+    color: @theme_accent;
+}
+
+selection {
+    background-color: @theme_selected_bg;
+    color: @theme_selected_fg;
+}

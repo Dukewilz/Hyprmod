@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MatugenReadable
+Comment=Readable dark Matugen theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=MatugenReadable
+MetacityTheme=Adwaita
+IconTheme=Adwaita
+CursorTheme=Adwaita
